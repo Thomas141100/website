@@ -6,9 +6,14 @@ jobs:
     name: Build Vue
     steps:
     - uses: actions/checkout@v2
-    - id: Build-Vue
-      uses: xRealNeon/VuePagesAction@1.0.1
-      with:
-        username: 'Thomas141100'
-        reponame: 'website'
-        token: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
+    - run: |
+        npm ci
+        npm run build
+        cd dist
+        ln -s index.html 404.html
+        git config --global user.email "CI@example.com"
+        git config --global user.name "CI"
+        git init
+        git add -A
+        git commit -m "deploy"
+        git push -f https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git master:gh-pages
