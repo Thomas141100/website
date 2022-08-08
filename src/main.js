@@ -7,7 +7,7 @@ import VueGtag from "vue-gtag";
 
 Vue.use(Buefy)
 Vue.use(VueGtag, {
-  config: { id: "G-TQHZVF6TYS" }
+  config: { id: "G-NXTHJ61NYD" }
 });
 
 Vue.config.productionTip = false

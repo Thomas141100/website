@@ -1,14 +1,14 @@
 <template>
     <div>
         <div class="text-center title">
-            <h1 :class="{'has-text-white': this.$root.$children[0].darkTheme}">Sjoerd Bolten</h1>
-            <h2 :class="{'has-text-white': this.$root.$children[0].darkTheme}">aka Netlob</h2>
+            <h1 :class="{'has-text-white': this.$root.$children[0].darkTheme}">Thomas Saury</h1>
+            <h2 :class="{'has-text-white': this.$root.$children[0].darkTheme}">aka TheLegend27</h2>
             <!-- <span> -->
             <div class="columns is-8 is-desktop is-centered">
                 <span class="column status" v-html="status.status"></span>
-                <a class="column github" href="https://github.com/netlob" @click="logContact('github')" target="blank"><span class="is-size-3" :class="{'has-text-white': this.$root.$children[0].darkTheme}">GitHub</span></a>
+                <a class="column github" href="https://github.com/thomas141100" @click="logContact('github')" target="blank"><span class="is-size-3" :class="{'has-text-white': this.$root.$children[0].darkTheme}">GitHub</span></a>
                 <a class="column discord" @click="discordPopup" target="blank"><img class="is-inline" src="~@/assets/svg/discord.svg" alt=""></a>
-                <a class="column linkedin" href="https://www.linkedin.com/in/sjoerdbolten/"  @click="logContact('linkedin')" target="blank" :class="{inverted: this.$root.$children[0].darkTheme}"><img class="is-inline" src="~@/assets/svg/linkedin.svg" alt=""></a>
+                <a class="column linkedin" href="https://www.linkedin.com/in/tsaury/"  @click="logContact('linkedin')" target="blank" :class="{inverted: this.$root.$children[0].darkTheme}"><img class="is-inline" src="~@/assets/svg/linkedin.svg" alt=""></a>
             </div>
             <!-- </span> -->
         </div>
@@ -31,7 +31,7 @@
         },
         discordPopup() {
             this.logContact("discord");
-            alert("Add me on Discord: Sjoerd#1300 :)");
+            alert("Add me on Discord: TheLegend27#8744 :)");
         },
         logContact(method) {
             this.$gtag.event('contact', { method: method });
