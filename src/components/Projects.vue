@@ -4,9 +4,9 @@
             Portfolio
         </h2>
         <Project v-for="(project, index) in projects" :key="project.name" :project="project" :index="index" />
-        <h2 class="title is-3 has-text-centered mt-5"  :class="{'has-text-white': this.$root.$children[0].darkTheme}">
+        <!-- <h2 class="title is-3 has-text-centered mt-5"  :class="{'has-text-white': this.$root.$children[0].darkTheme}">
             And many more (smaller) projects can be found on <a href="https://github.com/thomas141100" target="blank">my GitHub</a>!
-        </h2>
+        </h2> -->
     </section>
 </template>
 
