@@ -11,6 +11,7 @@ jobs:
         npm run build
         cd dist
         ln -s index.html 404.html
+        echo "thelegend27.fr" > CNAME
         git config --global user.email "CI@example.com"
         git config --global user.name "CI"
         git init
