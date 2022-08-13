@@ -1,14 +1,28 @@
 <template>
     <div>
         <div class="text-center title">
-            <h1 :class="{'has-text-white': this.$root.$children[0].darkTheme}">Thomas Saury</h1>
-            <h2 :class="{'has-text-white': this.$root.$children[0].darkTheme}">aka TheLegend27</h2>
+            <h1 :class="{ 'has-text-white': this.$root.$children[0].darkTheme }">Thomas Saury</h1>
+            <h2 :class="{ 'has-text-white': this.$root.$children[0].darkTheme }">aka TheLegend27</h2>
             <!-- <span> -->
+            <div class="column is-desktop is-centered">
+                <a href="https://status.thelegend27.fr/now-playing?open">
+                    <img src="https://status.thelegend27.fr/now-playing" width="720" height="96" alt="Now Playing">
+                </a>
+            </div>
             <div class="columns is-8 is-desktop is-centered">
-                <span class="column status" v-html="status.status"></span>
-                <a class="column github" href="https://github.com/thomas141100" @click="logContact('github')" target="blank"><span class="is-size-3" :class="{'has-text-white': this.$root.$children[0].darkTheme}">GitHub</span></a>
-                <a class="column discord" @click="discordPopup" target="blank"><img class="is-inline" src="~@/assets/svg/discord.svg" alt=""></a>
-                <a class="column linkedin" href="https://www.linkedin.com/in/tsaury/"  @click="logContact('linkedin')" target="blank" :class="{inverted: this.$root.$children[0].darkTheme}"><img class="is-inline" src="~@/assets/svg/linkedin.svg" alt=""></a>
+                <a class="column github" href="https://github.com/thomas141100" @click="logContact('github')"
+                    target="blank">
+                    <span class="is-size-3" :class="{ 'has-text-white': this.$root.$children[0].darkTheme }">
+                        GitHub
+                    </span>
+                </a>
+                <a class="column discord" @click="discordPopup" target="blank">
+                    <img class="is-inline" src="~@/assets/svg/discord.svg" alt="">
+                </a>
+                <a class="column linkedin" href="https://www.linkedin.com/in/tsaury/" @click="logContact('linkedin')"
+                    target="blank" :class="{ inverted: this.$root.$children[0].darkTheme }">
+                    <img class="is-inline" src="~@/assets/svg/linkedin.svg" alt="">
+                </a>
             </div>
             <!-- </span> -->
         </div>
@@ -16,19 +30,14 @@
 </template>
 
 <script>export default {
-  components: {
-  },
-  data() {
+    components: {
+    },
+    data() {
         return {
             status: {}
         }
     },
     methods: {
-        fetchStatus() {
-            fetch("https://sjoerd.dev/html/status")
-                .then(_ => _.json())
-                .then(_ => this.status = _)
-        },
         discordPopup() {
             this.logContact("discord");
             alert("Add me on Discord: TheLegend27#8744 :)");
@@ -52,7 +61,7 @@
     text-align: center;
 }
 
-.title > h1 {
+.title>h1 {
     font-family: "Montserrat Alternates", sans-serif;
     color: var(--navi-shape-red-color);
     color: #573ebc;
@@ -60,7 +69,7 @@
     font-size: 12vh;
 }
 
-.title > .columns {
+.title>.columns {
     font-weight: 700;
     text-align: center;
     position: absolute;
@@ -69,15 +78,15 @@
     width: 100vw;
 }
 
-.title > .columns > a {
+.title>.columns>a {
     color: black;
 }
 
-.title > .columns > a:hover {
+.title>.columns>a:hover {
     color: rgba($color: #000000, $alpha: .7);
 }
 
-.title > .columns > a > img {
+.title>.columns>a>img {
     height: 50px;
 }
 
@@ -109,14 +118,14 @@
 }
 
 @media only screen and (max-width: 1025px) {
-    .title > .columns {
+    .title>.columns {
         bottom: -30vh;
         left: 10px;
     }
 }
 
 @media only screen and (max-width: 800px) {
-    .title > h1 {
+    .title>h1 {
         font-size: 12vh;
     }
 
@@ -151,7 +160,7 @@
         top: 20vh;
     }
 
-    .title > h1 {
+    .title>h1 {
         font-size: 9vh;
     }
 
@@ -159,7 +168,7 @@
         zoom: 0.8;
     }
 
-    .title > .columns {
+    .title>.columns {
         left: 10px;
         bottom: -50vh !important;
     }
