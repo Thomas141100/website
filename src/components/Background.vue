@@ -39,13 +39,13 @@ export default {
 
 <style lang="scss" scoped>
 #background {
-  height: 101vh;
-  left: 50vw;
+  height: 101dvh;
+  left: 50dvw;
   min-width: 624px;
   position: absolute;
-  top: 50vh;
+  top: 50dvh;
   transform: translate(-50vw, -50vh);
-  width: 101vw;
+  width: 101dvw;
   z-index: 10;
 }
 
@@ -91,14 +91,14 @@ export default {
 }
 
 #background {
-  height: 101vh;
-  left: 50vw;
+  height: 101dvh;
+  left: 50dvw;
   /* min-height: 700px;
   min-width: 1024px; */
   position: absolute;
-  top: 50vh;
+  top: 50dvh;
   transform: translate(-50vw, -50vh);
-  width: 101vw;
+  width: 101dvw;
   z-index: 10;
 }
 

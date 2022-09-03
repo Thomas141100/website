@@ -24,7 +24,7 @@ export default {
 <!-- 
 <style lang="scss" scoped>
 .projects {
-  margin-top: 100vh;
-  width: 100vw;
+  margin-top: 100dvh;
+  width: 100dvw;
 }
 </style> -->
