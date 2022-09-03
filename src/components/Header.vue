@@ -4,9 +4,12 @@
             <h1 :class="{ 'has-text-white': this.$root.$children[0].darkTheme }">Thomas Saury</h1>
             <h2 :class="{ 'has-text-white': this.$root.$children[0].darkTheme }">aka TheLegend27</h2>
             <!-- <span> -->
-            <div class="column is-desktop is-centered">
+            <div class="musics is-desktop is-centered">
+                <p class="is-size-5" :class="{ 'has-text-white': this.$root.$children[0].darkTheme }">
+                    🎧 Currently listening to
+                </p>
                 <a href="https://status.thelegend27.fr/now-playing?open">
-                    <img src="https://status.thelegend27.fr/now-playing" width="720" height="96" alt="Now Playing">
+                    <img src="https://status.thelegend27.fr/now-playing" width="720" alt="Now Playing">
                 </a>
             </div>
             <div class="columns is-8 is-desktop is-centered">
@@ -78,6 +81,12 @@
     width: 100dvw;
 }
 
+.musics {
+    position: relative;
+    margin-top: 20px;
+    top: 10px;
+}
+
 .title>.columns>a {
     color: black;
 }
@@ -125,6 +134,10 @@
 }
 
 @media only screen and (max-width: 800px) {
+    .title {
+        top: 20dvh;
+    }
+
     .title>h1 {
         font-size: 12dvh;
     }
@@ -156,10 +169,6 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .title {
-        top: 20dvh;
-    }
-
     .title>h1 {
         font-size: 9dvh;
     }
@@ -170,7 +179,7 @@
 
     .title>.columns {
         left: 10px;
-        bottom: -40vh !important;
+        bottom: -30vh !important;
     }
 }
 </style>
