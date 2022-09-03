@@ -103,7 +103,7 @@ html,
 body {
   /* background-color: #573EBC; */
   background-color: #fff;
-  overflow-x: hidden;
+  overflow: hidden;
   /* scroll-behavior: smooth; */
   position: absolute;
   height: 100%;

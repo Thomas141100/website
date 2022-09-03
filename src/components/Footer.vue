@@ -21,14 +21,14 @@ export default {
 
 <style lang="scss" scoped>
 .footer {
-    position: relative;
-    top: 100px;
+    margin-top: 90vh;
+    z-index: 1000;
 }
 .content > a {
     font-size: 1.3em;
 }
 .content > p {
     position: relative;
-    top: 20px;
+    z-index: 1000;
 }
 </style>

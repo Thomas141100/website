@@ -170,7 +170,7 @@
 
     .title>.columns {
         left: 10px;
-        bottom: -50vh !important;
+        bottom: -40vh !important;
     }
 }
 </style>

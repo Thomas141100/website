@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header />
-    <Projects class="projects"/>
+    <!-- <Projects class="projects"/> -->
     <Footer />
   </div>
 </template>
@@ -16,15 +16,15 @@ export default {
   name: 'Home',
   components: {
     Header,
-    Projects,
+    // Projects,
     Footer
   }
 }
 </script>
-
+<!-- 
 <style lang="scss" scoped>
 .projects {
   margin-top: 100vh;
   width: 100vw;
 }
-</style>
+</style> -->
