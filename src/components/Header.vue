@@ -48,9 +48,6 @@
         logContact(method) {
             this.$gtag.event('contact', { method: method });
         },
-    },
-    mounted() {
-        this.fetchStatus()
     }
 }
 </script>
