@@ -21,7 +21,7 @@ export default {
 
 <style lang="scss" scoped>
 .footer {
-    margin-top: 90dvh;
+    margin-top: 90vh;
     z-index: 1000;
 }
 .content > a {

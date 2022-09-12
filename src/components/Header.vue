@@ -55,8 +55,8 @@
 <style lang="scss" scoped>
 .title {
     position: absolute;
-    top: 30dvh;
-    width: 100dvw;
+    top: 30vh;
+    width: 100vw;
     z-index: 10;
     text-align: center;
 }
@@ -66,7 +66,7 @@
     color: var(--navi-shape-red-color);
     color: #573ebc;
     font-weight: 800;
-    font-size: 12dvh;
+    font-size: 12vh;
 }
 
 .title>.columns {
@@ -75,7 +75,7 @@
     position: absolute;
     left: 0;
     bottom: -15vh;
-    width: 100dvw;
+    width: 100vw;
 }
 
 .musics {
@@ -132,11 +132,11 @@
 
 @media only screen and (max-width: 800px) {
     .title {
-        top: 20dvh;
+        top: 20vh;
     }
 
     .title>h1 {
-        font-size: 12dvh;
+        font-size: 12vh;
     }
 
     .columns .column {
@@ -167,7 +167,7 @@
 
 @media only screen and (max-width: 600px) {
     .title>h1 {
-        font-size: 9dvh;
+        font-size: 9vh;
     }
 
     .column {

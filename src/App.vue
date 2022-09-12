@@ -106,8 +106,8 @@ body {
   overflow: hidden;
   /* scroll-behavior: smooth; */
   position: absolute;
-  height: 100dvh;
-  width: 100dvw;
+  height: 100vh;
+  width: 100vw;
   padding: 0;
   margin: 0;
 }
