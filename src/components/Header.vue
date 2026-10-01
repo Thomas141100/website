@@ -43,7 +43,7 @@
     methods: {
         discordPopup() {
             this.logContact("discord");
-            alert("Add me on Discord: TheLegend27#8744 :)");
+            alert("Add me on Discord: lalegende27 :)");
         },
         logContact(method) {
             this.$gtag.event('contact', { method: method });
